@@ -5,7 +5,7 @@ export class AppRoutes {
   static get routes(): Router {
     const router = Router();
 
-    router.use('/api/v1/weatherData', WeatherDataRoutes.routes);
+    router.use('/api/v1', WeatherDataRoutes.routes);
 
     return router;
   }
